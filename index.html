@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+<html>
 <head>
   <base href="/">
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Infradise Inc Home">
+  <meta name="description" content="Visual Kube Home">
 
   <meta name="author" content="Infradise Inc.">
-  <meta name="description" content="The company that makes the product entitled 'Visual Kube' is a Kubernetes Smart Explorer for Developers and Operators" />
-  <meta name="keywords" content="Infradise, Visual Kube, visualkube, get-visualkube, mobile, desktop, app, kubernetes, explorer, management, ios, android, macos, windows, linux, x64, arm64" />
+  <meta name="description" content="The company that makes the product entitled 'Visual Kube' that is a Kubernetes smart explorer for developers and operators" />
+  <meta name="keywords" content="Infradise, Visual Kube, visualkube, get visualkube, mobile, desktop, app, kubernetes, explorer, management, ios, android, macos, windows, linux, x64, arm64" />
   <meta name="robots" content="index, follow" />
 
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Infradise">
+
   <title>Infradise Inc.</title>
+  <link rel="manifest" href="manifest.json">
 
+    <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = "3780760718";
+  </script>
+  <script src="flutter.js" defer></script>
 </head>
-
 <body>
-Welcome to Infradise!<br/><br/>
-
-We make the product entitled <b>Visual Kube</b> that is a Kubernetes smart explorer for developers and operators.<br/><br/>
-
-<b>Visual Kube</b> is the best way to manage plain Kubernetes, Google Kubernetes Engine, Amazon Elastic Kubernetes Service, Microsoft Azure Kubernetes as well as private Kubernetes clusters.<br/><br/>
-
-<b>Visual Kube</b> supports various platforms such as macOS (Intel, arm64), Windows, Linux (Fedora, Ubuntu), iOS, Android.<br/><br/>
-
-To get our latest <b>Visual Kube</b>, please visit our website at <a href='https://visualkube.com'>https://visualkube.com</a>.<br/><br/>
-
-<br/><br/><br/>
-© 2023 Infradise Inc. All rights reserved.
+  <script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
 </body>
 </html>
