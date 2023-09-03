@@ -1,11 +1,11 @@
 {
-    "name": "vkhome",
-    "short_name": "vkhome",
+    "name": "Infradise",
+    "short_name": "Infradise",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Visual Kube Home",
+    "description": "Infradise website",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
